@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbzHzTpOKorTYkrD5L9TUr7d1enbzXdj_Wr62ldRoe3VGSrTyLHam2RPNws__zit0zRpQg/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbzEqUwamgXpGnlh8WCnU0WUNbhGzjbHXYM5HSXi1hQUJ0Zoj__SdLlkcObddatr2jU/exec";
 
 /* =========================
    COLETAR DADOS DO FORMULÁRIO
