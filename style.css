@@ -1,0 +1,138 @@
+/* ======================= RESET ======================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  color: #0f172a;
+}
+
+/* ======================= TOPO ======================= */
+.topo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #4C4C4C;
+  color: white;
+  padding: 15px 30px;
+}
+
+.logo {
+  height: 55px;
+}
+
+.topo h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+/* ======================= CONTAINER ======================= */
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* ======================= FORMULÁRIO ======================= */
+
+.conteudo {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+/* ======================= TÍTULOS ======================= */
+
+h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #4C4C4C;
+  font-size: 18px;
+}
+
+/* ======================= CAMPOS ======================= */
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-top: 14px;
+  margin-bottom: 5px;
+  color: #4C4C4C;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4C4C4C;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* ======================= BOTÃO ======================= */
+
+.btn-enviar {
+  background: #4C4C4C;
+  color: white;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.btn-enviar:hover {
+  filter: brightness(0.9);
+}
+
+/* ======================= ERRO ======================= */
+
+.erro {
+  color: #dc2626;
+  margin-top: 10px;
+}
+
+/* ======================= RODAPÉ ======================= */
+
+.rodape {
+  background: #4C4C4C;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: 40px;
+  font-size: 13px;
+}
+
+/* ======================= RESPONSIVO ======================= */
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 20px;
+  }
+
+  .conteudo {
+    padding: 20px;
+  }
+
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Entrevista de Desligamento - Effico</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="topo">
+
+<img src="assets/Effico_logo.png" class="logo" alt="Effico Logo">
+
+<div>
+<h1>Entrevista de Desligamento</h1>
+</div>
+
+</header>
+
+<main class="container">
+
+<form id="formEntrevista" class="conteudo">
+
+<h3>Dados do Colaborador</h3>
+
+<label for="dataDesligamento">Data do Desligamento</label>
+<input type="date" id="dataDesligamento" data-field="dataDesligamento">
+
+<label for="dataEntrevista">Data da Entrevista</label>
+<input type="date" id="dataEntrevista" data-field="dataEntrevista">
+
+<label for="nome">Nome do Colaborador</label>
+<input type="text" id="nome" data-field="nome">
+
+<label for="cargo">Cargo</label>
+<input type="text" id="cargo" data-field="cargo">
+
+<label for="departamento">Departamento</label>
+<input type="text" id="departamento" data-field="departamento">
+
+<label for="tipoDesligamento">Tipo de Desligamento</label>
+<select id="tipoDesligamento" data-field="tipoDesligamento">
+<option value="">Selecione</option>
+<option>Pedido de demissão</option>
+<option>Demissão sem justa causa</option>
+<option>Demissão com justa causa</option>
+<option>Término de contrato</option>
+</select>
+
+<label for="motivoDesligamento">Motivo do Desligamento</label>
+<input type="text" id="motivoDesligamento" data-field="motivoDesligamento">
+
+<label for="fatorDetalhado">Fator Detalhado</label>
+<input type="text" id="fatorDetalhado" data-field="fatorDetalhado">
+
+<h3>Avaliação da Empresa</h3>
+
+<label for="q1">1. Como você avalia a empresa de uma maneira geral?</label>
+<select id="q1" data-field="q1">
+<option>Ótima</option>
+<option>Boa</option>
+<option>Regular</option>
+<option>Ruim</option>
+</select>
+
+<label for="q2">2. Como você avalia a política salarial da empresa?</label>
+<select id="q2" data-field="q2">
+<option>Ótima</option>
+<option>Boa</option>
+<option>Regular</option>
+<option>Ruim</option>
+</select>
+
+<label for="q3">3. Como você avalia o processo de valorização profissional?</label>
+<select id="q3" data-field="q3">
+<option>Ótima</option>
+<option>Boa</option>
+<option>Regular</option>
+<option>Ruim</option>
+</select>
+
+<label for="q4">4. Como você considera os objetivos da empresa no quesito transparência?</label>
+<select id="q4" data-field="q4">
+<option>Ótima</option>
+<option>Boa</option>
+<option>Regular</option>
+<option>Ruim</option>
+</select>
+
+<label for="q5">5. Como avalia o interesse da empresa pelo desenvolvimento dos seus colaboradores?</label>
+<select id="q5" data-field="q5">
+<option>Ótima</option>
+<option>Boa</option>
+<option>Regular</option>
+<option>Ruim</option>
+</select>
+
+<label for="comentarioFinal">Comentário Final</label>
+<textarea id="comentarioFinal" data-field="comentarioFinal"></textarea>
+
+<label for="obsRH">Observação do RH</label>
+<textarea id="obsRH" data-field="obsRH"></textarea>
+
+<button id="btnEnviar" class="btn-enviar" type="button">
+Enviar Entrevista
+</button>
+
+<p id="erro" class="erro"></p>
+
+</form>
+
+</main>
+
+<footer class="rodape">
+
+<p>
+Desenvolvido pela equipe
+<strong>Financial Planning and Analysis (FP&A)</strong>
+• planejamento@effico.com.br
+</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
