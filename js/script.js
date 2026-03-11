@@ -7,6 +7,7 @@ const API_URL = "https://script.google.com/macros/s/AKfycbzGhn0TnCAM9j8A1YQe1Wvz
 function coletarDados() {
 
   const dados = {
+
     dataRegistro: new Date().toISOString(),
 
     dataDesligamento: document.querySelector('[data-field="dataDesligamento"]')?.value || "",
@@ -39,6 +40,7 @@ function coletarDados() {
 
     comentarioFinal: document.querySelector('[data-field="comentarioFinal"]')?.value || "",
     obsRH: document.querySelector('[data-field="obsRH"]')?.value || ""
+
   };
 
   return dados;
@@ -56,10 +58,7 @@ async function enviarFormulario() {
 
     const response = await fetch(API_URL, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(dados)
+      body: new URLSearchParams(dados)
     });
 
     const resultado = await response.json();
@@ -68,7 +67,7 @@ async function enviarFormulario() {
 
       alert("Entrevista registrada com sucesso!\nID: " + resultado.id);
 
-      document.getElementById("formEntrevista").reset();
+      document.getElementById("formEntrevista")?.reset();
 
     } else {
 
